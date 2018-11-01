@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="24E-8O-1wl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Controller-->
+        <scene sceneID="WIK-BS-SdX">
+            <objects>
+                <viewController id="24E-8O-1wl" customClass="AXSettingsController" customModule="AXCore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ma-Pk-YNa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6I-kY-Xh4">
+                                <rect key="frame" x="100" y="220" width="175" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-HA-evL">
+                                <rect key="frame" x="50" y="291" width="275" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.46059155270000002" green="0.63392653850000003" blue="0.85513166240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCx-PG-3lF">
+                                <rect key="frame" x="50" y="329" width="275" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="DoC-p7-7Rv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZdC-HA-evL" firstAttribute="top" secondItem="l6I-kY-Xh4" secondAttribute="bottom" constant="50" id="Ckr-Re-fB0"/>
+                            <constraint firstItem="naJ-QM-BvV" firstAttribute="trailing" secondItem="ZdC-HA-evL" secondAttribute="trailing" constant="50" id="H6R-BM-R3d"/>
+                            <constraint firstItem="naJ-QM-BvV" firstAttribute="trailing" secondItem="nCx-PG-3lF" secondAttribute="trailing" constant="50" id="Tw3-e8-W84"/>
+                            <constraint firstItem="naJ-QM-BvV" firstAttribute="trailing" secondItem="l6I-kY-Xh4" secondAttribute="trailing" constant="100" id="b3N-Kb-MHB"/>
+                            <constraint firstItem="nCx-PG-3lF" firstAttribute="leading" secondItem="naJ-QM-BvV" secondAttribute="leading" constant="50" id="bMb-El-L5j"/>
+                            <constraint firstItem="ZdC-HA-evL" firstAttribute="leading" secondItem="naJ-QM-BvV" secondAttribute="leading" constant="50" id="dcL-k9-cQF"/>
+                            <constraint firstItem="nCx-PG-3lF" firstAttribute="top" secondItem="ZdC-HA-evL" secondAttribute="bottom" constant="20" id="j4R-Ox-tRk"/>
+                            <constraint firstItem="l6I-kY-Xh4" firstAttribute="top" secondItem="naJ-QM-BvV" secondAttribute="top" constant="200" id="ueb-95-y50"/>
+                            <constraint firstItem="l6I-kY-Xh4" firstAttribute="leading" secondItem="naJ-QM-BvV" secondAttribute="leading" constant="100" id="v36-r3-L2n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="naJ-QM-BvV"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="nCx-PG-3lF" id="JFn-of-Rtb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHb-Oc-oqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
